@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>weather</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="getCurrentWeather()">
+        <header class="header-style">
+            <div class="in-header">
+                <div>
+                    <a href="https://github.com/nathanKith"><img src="img/github.png" class="header-icon-style"></a>
+                </div>
+                <div class="margin-search">
+                    <form onsubmit="getCurrentWeather(); return false;">
+                        <input id="search" name="search" placeholder="Искать здесь..." type="search">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="main-style">
+            <div class="just-weather">
+                <h1><center>Получается, что это просто прогноз погоды:</center></h1> <!--без понятия что это за тег, но он работает-->
+            </div>
+            <div class="weather-container">
+                <div class="weather-info-key-container">
+                    <h1>Город:</h1>
+                    <h1>Температура:</h1>
+                    <h1>Влажность:</h1>
+                    <h1>Настроение:</h1>
+                </div>
+                <div class="weather-info-value-container">
+                    <h1><center id="city">Нальчик</center></h1>
+                    <h1><center id="temperature">20℃</center></h1>
+                    <h1><center id="humidity">10%</center></h1>
+                    <h1><center id="mood">Замечательное</center></h1>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!--мне стало лень-->
+        </footer>
+    </body>
+</html>
