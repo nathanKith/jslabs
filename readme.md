@@ -1,1 +1,0 @@
-JS BMSTU LABS.
