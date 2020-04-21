@@ -1,5 +1,4 @@
 function getCurrentWeather() {
-    console.log("я дебил");
     let city = encodeURIComponent(search.value) === "" ? "Нальчик" : encodeURIComponent(search.value);
     fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city +"&lang=ru&units=metric&appid=32273e1edabe3f7e12571409dbace3cf")
         .then(Response => Response.json())
