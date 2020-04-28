@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main>
+        <div style="background-color: grey;">
+            <div class="form-title">ЗАПОЛНИТЕ ФОРМУ БЫСТРО</div>
+            <form class="form-list" onsubmit="putData(); return false;">
+                <div class="form-list-item">
+                    <label for="name" class="label-form-style">Имя</label>
+                    <input type="text" id="myName" placeholder="Имя" class="input-form-style" required pattern="[А-Яа-я]+" maxlength="50">
+                </div>
+                <div class="form-list-item">
+                    <label for="email" class="label-form-style">Email</label>
+                    <input type="email" id="myEmail" placeholder="Email" class="input-form-style" required>
+                </div>
+                <div class="form-list-item">
+                    <label for="phoneNumber" class="label-form-style">Номер телефона</label>
+                    <input type="text" id="myPhoneNumber" placeholder="Номер телефона" class="input-form-style" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-list-item">
+                    <label for="description" class="label-form-style">Описание чего-нибудь</label>
+                    <textarea id="myDescription" placeholder="Описание чего-нибудь" maxlength="255"></textarea>
+                </div>
+                <div class="form-list-item">
+                    <label for="fileLoad" class="label-form-style">Файлик</label>
+                    <input id="myFileLoad" type="file" class="input-form-style">
+                </div>
+                <div>
+                    <input type="submit" id="button" value="Заполнил">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
