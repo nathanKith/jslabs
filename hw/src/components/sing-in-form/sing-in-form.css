@@ -1,0 +1,130 @@
+.SingIn {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.SingInInner {
+    background-color: #64b2ff;
+    border-radius: 20px;
+
+    height: 100%;
+    width: 50%;
+}
+
+.SingInHeaderText {
+    justify-content: center;
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.SingInErrorText {
+    justify-content: center;
+    display: none;
+
+    margin-bottom: 7px;
+
+    color: red;
+    font-size: 14px;
+}
+
+.SingInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.InputSingIn {
+    height: 50px;
+    width: 85%;
+
+    margin-bottom: 20px;
+    
+    border-radius: 10px;
+    background-color: #64b2ff;
+
+    border: 2px solid #6e6b6bc7;
+    font-size: 20px;
+
+    color: black;
+}
+
+input[type=email]:focus,
+input[type=password]:focus{
+    background-color: white;
+    border: 2px solid black;
+}
+
+.SubmitButtonSingIn {
+    width: 85%;
+    height: 50px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    cursor: pointer; 
+    margin-bottom: 10px;
+
+    border: 0px solid black;
+
+    background-color: #64b2ff;
+    
+    color: black;
+}
+
+.SubmitButtonSingIn:hover {
+    transition-duration: 0.5s;
+    border: 2px solid black;
+    background-color: #ffd6d678;
+    color: white;
+}
+
+@media only screen and (max-width: 1400px) {
+    .SingInInner {
+        width: 25%;
+    }
+
+    .SingInHeaderText {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .SingIn {
+        height: 100%;
+    }
+
+    .SingInInner {
+        width: 35%;
+    }
+
+    .SingInHeaderText {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .SingIn {
+        height: 100%;
+    }
+
+    .SingInErrorText {
+        font-size: 13px;
+    }
+
+    .SingInInner {
+        width: 70%;
+    }
+
+    .SingInHeaderText {
+        font-size: 20px;
+    }
+}

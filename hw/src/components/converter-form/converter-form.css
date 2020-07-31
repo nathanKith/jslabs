@@ -1,0 +1,118 @@
+.ConverterForm {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.ConverterFormInner {
+    background-color: #64b2ff;
+    border-radius: 10px;
+
+    height: 100%;
+    width: 50%;
+}
+
+.ConverterHeaderText {
+    justify-content: center;
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.InputConverter {
+    height: 200px;
+    width: 90%;
+
+    margin-bottom: 8px;
+    
+    border-radius: 10px;
+
+    font-size: 40px;
+}
+
+input[type=text]:focus {
+    outline:none;
+    border: 0px solid rgb(175, 175, 175);
+}
+
+.ConverterInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ConvertOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    width:100%;
+}
+
+.Left {
+    margin-right: 20px;
+}
+
+select {
+    width: 90%;
+    margin-bottom: 5px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(175, 175, 175);
+    background-color: white;
+
+    font-size: 20px;
+}
+
+select:focus {
+    outline:none;
+}
+
+input[name=right_input] {
+    background-color: white;
+    color:black;
+}
+
+@media only screen and (max-width: 1600px) {
+    .ConverterFormInner {
+        width: 27%;
+    }
+
+    .ConverterHeaderText {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .ConverterForm {
+        height: 100%;
+    }
+
+    .ConverterFormInner {
+        width: 35%;
+    }
+
+    .ConverterHeaderText {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ConverterForm {
+        height: 100%;
+    }
+
+    .ConverterFormInner {
+        width: 70%;
+    }
+
+    .ConverterHeaderText {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,22 @@
+.exchangeTable {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.exchangeTableInner {
+    background-color: #64b2ff;
+    border-radius: 20px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-bottom: 30px;
+}
+
+.headTd {
+    font-weight: bold;
+}
